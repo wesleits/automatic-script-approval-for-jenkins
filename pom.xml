@@ -5,17 +5,14 @@
         <artifactId>plugin</artifactId>
         <version>2.32</version>
     </parent>
-    <artifactId>permissive-script-security</artifactId>
-    <version>0.4-SNAPSHOT</version>
+    <artifactId>automatic-script-approval-for-jenkins</artifactId>
+    <version>0.1</version>
     <packaging>hpi</packaging>
-    <name>Permissive Script Security Plugin</name>
-    <description>Do not install unless you know what you are doing. Turns on permissive mode of Script Security Plugin. Problematic signatures will be logged but access will not be rejected.</description>
-    <url>https://wiki.jenkins-ci.org/display/JENKINS/Permissive+Script+Security+Plugin</url>
+    <name>Automatic Script Approval For Jenkins</name>
+    <description>Do not install unless you know what you are doing.</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.level>6</java.level>
-        <jenkins.version>1.609</jenkins.version>
     </properties>
 
     <dependencies>
