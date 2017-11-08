@@ -15,12 +15,11 @@ then
   if [ $EUID != 0 ]
   then 
     sudo "$0" "$@"
-    exit $?
   else
     #=== Install pre requisites
     apt-get update
-    apt-get -y install software-properties-common
     apt-get -y install wget
+    apt-get -y install software-properties-common
     apt-get -y install vim
 
     #=== Install git
@@ -39,6 +38,8 @@ then
     add-apt-repository ppa:andrei-pozolotin/maven3
     apt-get update
     apt-get -y install maven3
+    
+    exit $?
   fi
 
   #== initialize repository
