@@ -1,12 +1,12 @@
 #!/bin/bash
 
-##############################################################################################################################################################################
-##### Script works correct in Ubuntu 14/16                                                                                                                               #####
-##### To installs this plugin runs in jenkins machine these commands:                                                                                                    #####
-#####                                                                                                                                                                    #####
-##### wget https://raw.githubusercontent.com/wesleits/automatic-script-approval-for-jenkins/master/automatic-script-approval-for-jenkins.hpi -P /var/lib/jenkins/plugins #####
-##### service jenkins restart                                                                                                                                            ##### 
-##############################################################################################################################################################################
+###########################################################################################
+##### Script works correct in Ubuntu 14/16                                            #####
+##### To installs this plugin runs in jenkins machine these commands:                 #####
+#####                                                                                 #####
+##### wget -N https://goo.gl/KYzEzx -P /var/lib/jenkins/plugins --content-disposition #####
+##### service jenkins restart                                                         ##### 
+###########################################################################################
 
 
 if [ ! -d ".git" ]
@@ -62,7 +62,7 @@ git fetch
 git checkout master
 git merge
 
-mvn package  # needs JDK 8 to correct compile plugin!!!
+mvn package  # needs JDK 8 to compile plugin!!!!!!
 
 #=== only push if the maven package does not to return some error
 if [ $? -eq 0 ]
