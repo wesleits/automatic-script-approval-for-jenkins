@@ -6,7 +6,7 @@
         <version>2.32</version>
     </parent>
     <artifactId>automatic-script-approval-for-jenkins</artifactId>
-    <version>0.2</version>
+    <version>0.3</version>
     <packaging>hpi</packaging>
     <name>Automatic Script Approval For Jenkins</name>
     <description>Do not install unless you know what you are doing.</description>

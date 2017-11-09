@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ###########################################################################################
-##### Script works correct in Ubuntu 14/16                                            #####
-##### To installs this plugin runs in jenkins machine these commands:                 #####
+##### Script works correctly in Ubuntu 14.04/16.04                                    #####
+##### To install this plugin execute in jenkins machine these commands:               #####
 #####                                                                                 #####
 ##### wget -N https://goo.gl/KYzEzx -P /var/lib/jenkins/plugins --content-disposition #####
 ##### service jenkins restart                                                         ##### 
